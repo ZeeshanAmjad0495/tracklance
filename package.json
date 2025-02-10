@@ -1,0 +1,13 @@
+{
+  "name": "tracklance",
+  "version": "1.0.0",
+  "description": "A CLI task tracker built using node js",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "Zeeshan Amjad",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.13.1"
+  }
+}
