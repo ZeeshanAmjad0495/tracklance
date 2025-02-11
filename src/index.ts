@@ -15,9 +15,11 @@ if (!args || !args.length) {
   throw new Error("No arguments provided");
 }
 
+const command = args.includes("list") ? args.join(" ") : args[0];
+
 const FILE = process.env.FILE ?? "tasks.json";
 
-switch (args.join(" ")) {
+switch (command) {
   case Commands.Add:
     add(FILE, args[1]);
     break;
@@ -46,5 +48,5 @@ switch (args.join(" ")) {
     markDone(FILE, args[1]);
     break;
   default:
-    break;
+    throw new Error("Command not recognized. Please try again.");
 }
