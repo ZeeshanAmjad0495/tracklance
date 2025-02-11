@@ -1,6 +1,6 @@
-### TrackLance - CLI Task Tracker  
+### tsx tracklance.ts - CLI Task Tracker  
 
-TrackLance is a command-line tool for managing tasks. It allows you to add, update, delete, and track the status of your tasks efficiently.  
+tsx tracklance.ts is a command-line tool for managing tasks. It allows you to add, update, delete, and track the status of your tasks efficiently.  
 
 📌 **Project URL:** [Task Tracker Roadmap](https://roadmap.sh/projects/task-tracker)  
 
@@ -16,8 +16,8 @@ TrackLance is a command-line tool for managing tasks. It allows you to add, upda
 ### 1. Clone the Repository  
 
 ```bash
-git clone https://github.com/ZeeshanAmjad0495/tracklance.git
-cd tracklance
+git clone https://github.com/ZeeshanAmjad0495/tsx tracklance.ts.git
+cd tsx tracklance.ts
 ```
 
 ### 2. Install Development Dependencies (Optional)
@@ -26,58 +26,47 @@ cd tracklance
 npm install --save-dev
 ```
 
-### 3. Set Up the CLI  
-
-Create a runnable script:  
-
-```bash
-echo -e '#!/bin/bash\ntsx tracklance.ts "$@"' > tracklance
-chmod +x tracklance
-sudo mv tracklance /usr/local/bin/
-```
-Now you can use `tracklance`.  
-Or just use `tsx tracklance.ts ... [options] [options]`
 
 ## Usage  
 
 ### Adding a Task  
 
 ```bash
-tracklance add "Buy groceries"
+tsx tracklance.ts add "Buy groceries"
 # Output: Task added successfully (ID: abc123)
 ```
 
 ### Updating a Task  
 
 ```bash
-tracklance update abc123 "Buy groceries and cook dinner"
+tsx tracklance.ts update abc123 "Buy groceries and cook dinner"
 ```
 
 ### Deleting a Task  
 
 ```bash
-tracklance delete abc123
+tsx tracklance.ts delete abc123
 ```
 
 ### Marking a Task as In-Progress  
 
 ```bash
-tracklance mark-in-progress abc123
+tsx tracklance.ts mark-in-progress abc123
 ```
 
 ### Marking a Task as Done  
 
 ```bash
-tracklance mark-done abc123
+tsx tracklance.ts mark-done abc123
 ```
 
 ### Listing Tasks  
 
 ```bash
-tracklance list         # All tasks  
-tracklance list done    # Completed tasks  
-tracklance list todo    # Pending tasks  
-tracklance list in-progress # Tasks in progress  
+tsx tracklance.ts list         # All tasks  
+tsx tracklance.ts list done    # Completed tasks  
+tsx tracklance.ts list todo    # Pending tasks  
+tsx tracklance.ts list in-progress # Tasks in progress  
 ```
 
 ## Sample Data  
