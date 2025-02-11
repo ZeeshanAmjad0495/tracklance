@@ -20,7 +20,7 @@ git clone https://github.com/ZeeshanAmjad0495/tracklance.git
 cd  tracklance
 ```
 
-### 2. Install Development Dependencies (Optional)
+### 2. Install Development Dependencies (Optional - For Development)
 
 ```bash
 npm install --save-dev
