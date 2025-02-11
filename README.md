@@ -88,11 +88,3 @@ A sample `tasks.json` file:
 ## Contributing  
 
 Feel free to fork and improve the project!  
-
-## License  
-
-MIT License.  
-
----
-
-This README is now aligned with your latest changes! 🚀
