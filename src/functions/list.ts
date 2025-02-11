@@ -1,5 +1,5 @@
-import readDataFromFile from "../helpers/read-data-from-file.js";
 import Status from "../constants/status.js";
+import readDataFromFile from "../helpers/read-data-from-file.js";
 
 function list(status?: Status) {
   const tasks = readDataFromFile("tasks.json");

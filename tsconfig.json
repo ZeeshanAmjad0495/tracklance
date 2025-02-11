@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    /* Project Configuration */
+    "incremental": true,
+    "composite": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
+
+    /* Language and Environment */
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+  
+
+    /* Type Checking */
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    /* Linting & Type Safety */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+
+    /* Performance */
+    "skipLibCheck": true,
+    "disableReferencedProjectLoad": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "eslint.config.js"],
+  "exclude": ["node_modules", "dist"]
+}

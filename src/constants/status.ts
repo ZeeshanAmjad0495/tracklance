@@ -1,7 +1,7 @@
 enum Status {
-  Todo = "todo",
-  InProgress = "in-progress",
   Done = "done",
+  InProgress = "in-progress",
+  Todo = "todo",
 }
 
 export default Status;

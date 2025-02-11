@@ -1,6 +1,6 @@
 import fs from "fs";
-import Task from "../types/task";
 import Status from "../constants/status";
+import Task from "../types/task";
 import readDataFromFile from "../helpers/read-data-from-file.js";
 
 function add(file: string, description: string) {

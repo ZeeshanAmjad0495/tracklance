@@ -1,7 +1,7 @@
 import fs from "fs";
 import Task from "../types/task";
 
-function readDataFromFile(file): Task[] {
+function readDataFromFile(file: string): Task[] {
   try {
     const tasks = JSON.parse(fs.readFileSync(file, "utf8"));
     return tasks;

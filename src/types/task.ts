@@ -1,8 +1,8 @@
 interface Task {
-  id: string;
-  description: string;
-  status: string;
   createdAt: string;
+  description: string;
+  id: string;
+  status: string;
   updatedAt: string;
 }
 

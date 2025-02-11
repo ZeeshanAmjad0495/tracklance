@@ -1,13 +1,13 @@
+import Commands from "./constants/commands.js";
+import Status from "./constants/status.js";
 import {
   add,
-  update,
   deleteTask,
   list,
   markDone,
   markInProgress,
+  update,
 } from "./functions/index.js";
-import Status from "./constants/status.js";
-import Commands from "./constants/commands.js";
 
 const args = process.argv.slice(2);
 
@@ -17,20 +17,22 @@ if (!args || !args.length) {
 
 const command = args.includes("list") ? args.join(" ") : args[0];
 
-const FILE = process.env.FILE ?? "tasks.json";
+const FILE = process.env["FILE"] ?? "tasks.json";
 
 switch (command) {
   case Commands.Add:
-    add(FILE, args[1]);
+    args[1] ? add(FILE, args[1]) : console.log("Please enter a description");
     break;
   case Commands.Update:
-    update(FILE, args[1], args[2]);
+    args[1]
+      ? update(FILE, args[1], args[2])
+      : console.log("Please enter an id");
     break;
   case Commands.List:
     list();
     break;
   case Commands.Delete:
-    deleteTask(FILE, args[1]);
+    args[1] ? deleteTask(FILE, args[1]) : console.log("Please enter an id");
     break;
   case Commands.ListTodo:
     list(Status.Todo);
@@ -42,10 +44,10 @@ switch (command) {
     list(Status.Done);
     break;
   case Commands.MarkInProgress:
-    markInProgress(FILE, args[1]);
+    args[1] ? markInProgress(FILE, args[1]) : console.log("Please enter an id");
     break;
   case Commands.MarkDone:
-    markDone(FILE, args[1]);
+    args[1] ? markDone(FILE, args[1]) : console.log("Please enter an id");
     break;
   default:
     throw new Error("Command not recognized. Please try again.");

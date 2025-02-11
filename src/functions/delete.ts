@@ -1,6 +1,6 @@
 import fs from "fs";
-import readDataFromFile from "../helpers/read-data-from-file.js";
 import findTaskIndexById from "../helpers/find-task-by-id.js";
+import readDataFromFile from "../helpers/read-data-from-file.js";
 
 function deleteTask(file: string, id: string) {
   const tasks = readDataFromFile(file);
