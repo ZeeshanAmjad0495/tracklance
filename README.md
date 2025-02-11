@@ -1,7 +1,3 @@
-Here’s an updated README for your repository:  
-
----
-
 ### TrackLance - CLI Task Tracker  
 
 TrackLance is a command-line tool for managing tasks. It allows you to add, update, delete, and track the status of your tasks efficiently.  
@@ -24,10 +20,10 @@ git clone https://github.com/ZeeshanAmjad0495/tracklance.git
 cd tracklance
 ```
 
-### 2. Install Dependencies  
+### 2. Install Development Dependencies (Optional)
 
 ```bash
-npm install
+npm install --save-dev
 ```
 
 ### 3. Set Up the CLI  
