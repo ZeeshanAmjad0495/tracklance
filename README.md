@@ -1,6 +1,6 @@
-### tsx tracklance.ts - CLI Task Tracker  
+### Tracklance - CLI Task Tracker  
 
-tsx tracklance.ts is a command-line tool for managing tasks. It allows you to add, update, delete, and track the status of your tasks efficiently.  
+Tracklance is a command-line tool for managing tasks. It allows you to add, update, delete, and track the status of your tasks efficiently.  
 
 📌 **Project URL:** [Task Tracker Roadmap](https://roadmap.sh/projects/task-tracker)  
 
@@ -16,8 +16,8 @@ tsx tracklance.ts is a command-line tool for managing tasks. It allows you to ad
 ### 1. Clone the Repository  
 
 ```bash
-git clone https://github.com/ZeeshanAmjad0495/tsx tracklance.ts.git
-cd tsx tracklance.ts
+git clone https://github.com/ZeeshanAmjad0495/tracklance.git
+cd  tracklance
 ```
 
 ### 2. Install Development Dependencies (Optional)
