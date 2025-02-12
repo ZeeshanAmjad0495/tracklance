@@ -1,7 +1,7 @@
-import readDataFromFile from "./read-data-from-file.js";
-import Task from "../types/task.js";
+import type Task from '../types/task.js';
+import readDataFromFile from './read-data-from-file.js';
 
-function findTaskIndexById(id: string, file: string) {
+function findTaskIndexById(id: string, file: string): number {
   const tasks = readDataFromFile(file);
   const task = tasks.find((task) => task.id === id);
 

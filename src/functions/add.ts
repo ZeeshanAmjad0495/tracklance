@@ -1,9 +1,10 @@
-import fs from "fs";
-import Status from "../constants/status";
-import Task from "../types/task";
-import readDataFromFile from "../helpers/read-data-from-file.js";
+import fs from 'fs';
 
-function add(file: string, description: string) {
+import Status from '../constants/status';
+import readDataFromFile from '../helpers/read-data-from-file.js';
+import type Task from '../types/task';
+
+function add(file: string, description: string): void {
   const data: Task[] = readDataFromFile(file);
 
   const task: Task = {

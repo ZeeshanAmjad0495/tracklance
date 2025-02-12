@@ -1,25 +1,13 @@
 {
   "compilerOptions": {
-    /* Project Configuration */
-    "incremental": true,
-    "composite": true,
-    "tsBuildInfoFile": "./.tsbuildinfo",
-
-    /* Language and Environment */
-    "target": "ES2022",
+    "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "strict": true,
-    "alwaysStrict": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
+    "rootDir": ".",
+    "outDir": "dist",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-  
-
-    /* Type Checking */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -27,22 +15,21 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
-
-    /* Linting & Type Safety */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noEmit": true,
-
-    /* Performance */
-    "skipLibCheck": true,
-    "disableReferencedProjectLoad": true
+    "skipLibCheck": false
   },
-  "include": ["**/*.ts", "**/*.tsx", "eslint.config.js"],
+  "include": [ 
+    "src/**/*.ts",
+    "eslint.config.js",
+    "tracklance.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }

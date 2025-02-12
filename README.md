@@ -85,6 +85,111 @@ A sample `tasks.json` file:
 ]
 ```
 
+## Code Quality and Standards
+
+This project follows strict TypeScript and ESLint configurations to ensure high-quality, maintainable, and consistent code. Below are the key conventions and rules enforced in the repository.
+
+### TypeScript Standards
+
+The project uses strict TypeScript settings to enforce type safety and prevent runtime errors.
+
+#### **Strict Type Checking**
+We enforce explicit return types and strict type checking to avoid implicit `any`.
+
+```ts
+function parseInput(input: string): number {
+  return parseInt(input, 10);
+}
+```
+
+#### **Consistent Type Imports**
+All type imports are consistently formatted to improve code clarity and avoid unnecessary runtime imports.
+
+```ts
+import type { Task } from '../types/task.js';
+```
+
+#### **No Implicit Any**
+All variables and function parameters must have explicit types.
+
+```ts
+function addTask(task: Task): void {
+  tasks.push(task);
+}
+```
+
+### ESLint Standards
+
+The project follows a strict ESLint configuration with `@typescript-eslint`, `prettier`, and `simple-import-sort` to ensure clean and structured code.
+
+#### **Import Sorting**
+Imports are automatically sorted for consistency.
+
+```ts
+// Incorrect
+import fs from 'fs';
+import type { Task } from '../types/task.js';
+import path from 'path';
+
+// Correct
+import type { Task } from '../types/task.js';
+
+import fs from 'fs';
+import path from 'path';
+```
+
+#### **No Unused Variables**
+All declared variables must be used to avoid clutter.
+
+```ts
+// Incorrect
+const unusedVariable = 'This is not used';
+
+// Correct
+const taskName = getTaskName();
+console.log(taskName);
+```
+
+#### **Consistent Code Formatting**
+Code formatting is enforced with Prettier.
+
+```ts
+// Incorrect
+const greeting = "Hello, world";
+
+// Correct
+const greeting = 'Hello, world';
+```
+
+#### **Strict Boolean Expressions**
+Boolean conditions must be explicitly checked.
+
+```ts
+// Incorrect
+if (!status) {
+  console.log('Invalid status');
+}
+
+// Correct
+if (status === undefined || status === null) {
+  console.log('Invalid status');
+}
+```
+
+### Running ESLint and Auto-Fixing Issues
+
+To check for linting errors, run:
+
+```sh
+npm run lint
+```
+
+To automatically fix issues:
+
+```sh
+npm run lint --fix
+```
+
 ## Contributing  
 
-Feel free to fork and improve the project!  
+Feel free to fork and improve the project!

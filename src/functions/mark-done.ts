@@ -1,7 +1,7 @@
-import Status from "../constants/status.js";
-import update from "./update.js";
+import Status from '../constants/status.js';
+import update from './update.js';
 
-function markDone(file: string, id: string) {
+function markDone(file: string, id: string): void {
   update(file, id, undefined, Status.Done);
 }
 
